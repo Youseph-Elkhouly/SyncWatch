@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "SyncWatch",
+    "version": "1.0",
+    "description": "Synchronized video playback across platforms.",
+    "permissions": ["tabs", "activeTab", "storage"],
+    "host_permissions": ["*://*.youtube.com/*", "*://*.123movies.*/*", "*://*.soap2day.*/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*", "*://*.123movies.*/*", "*://*.soap2day.*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

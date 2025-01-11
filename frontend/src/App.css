@@ -1,0 +1,99 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+.syncwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.syncwatch-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #00d8ff;
+}
+
+.syncwatch-main {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.session-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join-session {
+  display: flex;
+  gap: 10px;
+}
+
+.join-session input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.playback-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-play {
+  background-color: #28a745;
+}
+
+.btn-pause {
+  background-color: #ffc107;
+}
+
+.btn-sync {
+  background-color: #17a2b8;
+}
+
+.btn-skip {
+  background-color: #dc3545;
+}
+
+.btn-play:hover {
+  background-color: #218838;
+}
+
+.btn-pause:hover {
+  background-color: #e0a800;
+}
+
+.btn-sync:hover {
+  background-color: #138496;
+}
+
+.btn-skip:hover {
+  background-color: #c82333;
+}
